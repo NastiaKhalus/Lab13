@@ -13,7 +13,7 @@ public class TwitterUser {
     public TwitterUser(String email, String country, String lastActiveTime) {
         this.email = email;
         this.country = country;
-        this.lastActiveTime = dalastActiveTimete;
+        this.lastActiveTime = lastActiveTime;
     }
 
     public String getUserMail() {

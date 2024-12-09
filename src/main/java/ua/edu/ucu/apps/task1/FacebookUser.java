@@ -7,10 +7,10 @@ import lombok.ToString;
 @ToString
 public class FacebookUser {
 
-    public FacebookUser(String name, String email, String date) {
-        this.name = name;
+    public FacebookUser(String email, String userCountry, String userActiveTime) {
         this.email = email;
-        this.date = date;
+        this.userCountry = userCountry;
+        this.userActiveTime = userActiveTime;
     }
     
     private String email;
