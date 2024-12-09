@@ -13,84 +13,53 @@
  <version>0.0.1-SNAPSHOT</version>
  <name>flowercontinue</name>
  <description>Demo project for Spring Boot</description>
- <url/>
- <licenses>
-  <license/>
- </licenses>
- <developers>
-  <developer/>
- </developers>
- <scm>
-  <connection/>
-  <developerConnection/>
-  <tag/>
-  <url/>
- </scm>
+
  <properties>
   <java.version>21</java.version>
  </properties>
+
  <dependencies>
   <dependency>
    <groupId>org.springframework.boot</groupId>
    <artifactId>spring-boot-starter-web</artifactId>
   </dependency>
-    <dependency>
-    <groupId>org.junit.jupiter</groupId>
-    <artifactId>junit-jupiter-engine</artifactId>
-    <version>5.9.3</version>
-    <scope>test</scope>
-</dependency>
+  <dependency>
+   <groupId>org.junit.jupiter</groupId>
+   <artifactId>junit-jupiter-engine</artifactId>
+   <version>5.9.3</version>
+   <scope>test</scope>
+  </dependency>
   <dependency>
    <groupId>org.springframework.boot</groupId>
    <artifactId>spring-boot-starter-test</artifactId>
    <scope>test</scope>
   </dependency>
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.34</version>
-            <scope>provided</scope>
-        </dependency>
-         <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20231013</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <version>3.3.4</version>
-        </dependency>
-        <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter</artifactId>
-        <version>3.0.0</version> <!-- Use an appropriate version for your project -->
-    </dependency>
-
-    <!-- Spring Boot Starter Test for testing purposes -->
-    <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-test</artifactId>
-        <scope>test</scope>
-    <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-core</artifactId>
-        <version>4.11.0</version>
-        <scope>test</scope>
-    </dependency>
-
-    </dependency>
-        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.7.4</version>
-        </dependency>
-
-
-
+  <dependency>
+   <groupId>org.projectlombok</groupId>
+   <artifactId>lombok</artifactId>
+   <version>1.18.34</version>
+   <scope>provided</scope>
+  </dependency>
+  <dependency>
+   <groupId>org.json</groupId>
+   <artifactId>json</artifactId>
+   <version>20231013</version>
+  </dependency>
+  <dependency>
+   <groupId>org.springframework.boot</groupId>
+   <artifactId>spring-boot-starter-data-jpa</artifactId>
+  </dependency>
+  <dependency>
+   <groupId>org.postgresql</groupId>
+   <artifactId>postgresql</artifactId>
+   <version>42.7.4</version>
+  </dependency>
+  <dependency>
+   <groupId>org.mockito</groupId>
+   <artifactId>mockito-core</artifactId>
+   <version>4.11.0</version>
+   <scope>test</scope>
+  </dependency>
  </dependencies>
 
  <build>
@@ -101,5 +70,4 @@
    </plugin>
   </plugins>
  </build>
-
 </project>
