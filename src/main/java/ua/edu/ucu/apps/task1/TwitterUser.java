@@ -4,11 +4,17 @@ import lombok.AllArgsConstructor;
 import lombok.ToString;
 
 @ToString
-@AllArgsConstructor
+
 public class TwitterUser {
     private String email;
     private String country;
     private String lastActiveTime;
+
+    public TwitterUser(String email, String country, String lastActiveTime) {
+        this.email = email;
+        this.country = country;
+        this.lastActiveTime = dalastActiveTimete;
+    }
 
     public String getUserMail() {
         return email;
