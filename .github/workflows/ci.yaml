@@ -26,3 +26,9 @@ jobs:
 
     - name: Run tests (Skip if needed)
       run: mvn test -DskipTests=true
+    
+    - name: Build with Maven (Quiet Mode)
+      run: mvn clean install --quiet
+    
+    - name: Build with Maven (Skip Tests)
+      run: mvn clean install -DskipTests=true
