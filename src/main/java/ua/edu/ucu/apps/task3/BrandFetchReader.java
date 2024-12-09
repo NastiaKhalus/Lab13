@@ -6,8 +6,9 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.SneakyThrows;
-
+import java.io.IOException;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import java.net.URISyntaxException;
 
 public class BrandFetchReader {
 
@@ -29,9 +30,12 @@ public class BrandFetchReader {
 
             ObjectMapper objectMapper = new ObjectMapper();
             return objectMapper.readValue(response.body(), Company.class);
-        } catch (java.net.URISyntaxException | java.io.IOException | com.fasterxml.jackson.core.JsonProcessingException e) {
-            e.printStackTrace(); 
-            return null; 
+        } catch (URISyntaxException | IOException e) {
+            e.printStackTrace();
+            return null;
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+            return null;
         }
     }
 }
