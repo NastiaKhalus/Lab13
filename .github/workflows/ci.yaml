@@ -22,8 +22,6 @@ jobs:
     - name: Build with Maven (Fail on Errors Disabled)
       run: mvn clean install -DskipTests=true -Dmaven.compiler.failOnError=false
 
-    - name: Run tests (Skip if needed)
-      run: mvn test -DskipTests=true
 
     - name: Build with Maven (Quiet Mode)
       run: mvn clean install -DskipTests=true --quiet -Dmaven.compiler.failOnError=false
