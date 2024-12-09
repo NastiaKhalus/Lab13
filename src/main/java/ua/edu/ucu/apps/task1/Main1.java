@@ -2,7 +2,7 @@ package ua.edu.ucu.apps.task1;
 
 import java.time.LocalDateTime;
 
-public class Main {
+public class Main1 {
     public static void main (String[] args){
         AuthMethod authMethod = AuthMethod.FACEBOOK;
         User user = null;

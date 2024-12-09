@@ -1,6 +1,6 @@
 package ua.edu.ucu.apps.task2;
 
-public class Main {
+public class Main2 {
     public static void main(String[] args) {
         Database db = new Database();
         Auth auth = new Auth();
